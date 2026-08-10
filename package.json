@@ -1,0 +1,9 @@
+{
+  "name": "com.qthund.constraineddelaunaytriangulation",
+  "displayName": "QThund  ConstrainedDelaunayTriangulation",
+  "version": "0.1.0",
+  "description": "QThund  ConstrainedDelaunayTriangulation",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@MachinMachines"
+  }
+}
