@@ -16,6 +16,8 @@ using Game.Utils.Triangulation;
 using System.Collections.Generic;
 using UnityEngine;
 
+#if false
+
 /// <summary>
 /// A test client for the triangulation algorithm. Intended to be used via Inspector.
 /// </summary>
@@ -255,3 +257,4 @@ public class DelaunayTriangulationTester : MonoBehaviour
 #endif
 
 }
+#endif
