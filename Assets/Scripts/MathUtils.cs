@@ -56,6 +56,8 @@ namespace Game.Utils.Math
 			return ab_x_p.z == bc_x_p.z && ab_x_p.z == ca_x_p.z;
 		}
 
+		private const float CIRCUMCIRCLE_EPSILON = 1e-4f;
+
 		// https://gamedev.stackexchange.com/questions/71328/how-can-i-add-and-subtract-convex-polygons
 		public static bool IsPointInsideCircumcircle(Vector2 p0, Vector2 p1, Vector2 p2, Vector2 pointToCheck)
 		{
@@ -74,7 +76,7 @@ namespace Game.Utils.Math
 
 			float determinant = (a * e * i) + (b * f * g) + (c * d * h) - (g * e * c) - (h * f * a) - (i * d * b);
 
-			return determinant >= 0; // zero means on the perimeter
+			return determinant > CIRCUMCIRCLE_EPSILON;
 		}
 
 		/// <summary>
